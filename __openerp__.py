@@ -3,16 +3,16 @@
     'name': "CrazyEgg",
 
     'summary': """
-        CrazyEgg tracking""",
+        CrazyEgg Tracking""",
 
     'description': """
-         CrazyEgg tracking""",
+         CrazyEgg Tracking""",
 
-    'author': "BLOOPARK SYSTEMS GMBH. & CO. KG",
+    'author': "bloopark systems GmbH & Co. KG",
     'website': "http://www.bloopark.de",
 
-    'category': 'tracking',
-    'version': '0.1',
+    'category': 'Tracking',
+    'version': '1.0',
 
     'depends': [
         'base',

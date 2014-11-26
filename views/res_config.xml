@@ -3,17 +3,25 @@
 	<data>
 
 		<!-- Add CrazyEgg usage code snippet in global website settings -->
-		<record id="view_website_config_settings_snippet_inherit" model="ir.ui.view">
+        <record id="view_website_config_settings_snippet_inherit" model="ir.ui.view">
 			<field name="name">Website settings</field>
 			<field name="model">website.config.settings</field>
 			<field name="inherit_id" ref="website.view_website_config_settings" />
 			<field name="arch" type="xml">
 				<xpath expr="//group[@string='Domain']" position="inside">
-					<label for="crazyegg" />
+                    <label for="crazyegg" />
 					<div name="crazyegg">
 						<div>
 							<div name="crazyegg" class="oe_inline">
 								<field name="crazyegg" />
+							</div>
+						</div>
+					</div>
+					<label for="crazyegg_script" attrs="{'invisible': [('crazyegg', '=', False)] }"/>
+					<div name="crazyegg_script" attrs="{'invisible': [('crazyegg', '=', False)] }">
+						<div>
+							<div name="crazyegg_script" class="oe_inline">
+								<field name="crazyegg_script" placeholder="put your CrazyEgg Script here"/>
 							</div>
 						</div>
 					</div>

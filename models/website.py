@@ -8,5 +8,9 @@ class Website(Model):
     crazyegg = fields.Boolean(
         string='Use CrazyEgg',
         default=False,
-        help=('if activated CrazyEgg tracking is active')
+        help=('if activated CrazyEgg tracking is active'),
+        translate=True
+    )
+    crazyegg_script = fields.Text(
+        string='CrazyEgg Script'
     )

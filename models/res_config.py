@@ -10,3 +10,7 @@ class WebsiteConfigSettings(TransientModel):
         related='website_id.crazyegg',
         help=('if activated CrazyEgg tracking is active')
     )
+    crazyegg_script = fields.Text(
+        string='CrazyEgg Script',
+        related='website_id.crazyegg_script'
+    )
