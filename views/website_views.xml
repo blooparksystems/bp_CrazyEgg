@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<!-- Add CrazyEgg usage code snippet in website model -->
+		<record id="website_settings_snippet" model="ir.ui.view">
+			<field name="name">website.form</field>
+			<field name="model">website</field>
+			<field name="inherit_id" ref="website.view_website_form" />
+			<field name="arch" type="xml">
+				<xpath expr="//group[@name='domain']" position='inside'>
+					<field name="crazyegg" />
+				</xpath>
+			</field>
+		</record>
+
+	</data>
+</openerp>
