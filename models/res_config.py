@@ -1,8 +1,12 @@
- # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from openerp.models import TransientModel
 from openerp import fields
 
+
 class WebsiteConfigSettings(TransientModel):
+
+    """Adds the fields for CrazyEgg."""
+
     _inherit = 'website.config.settings'
 
     crazyegg = fields.Boolean(

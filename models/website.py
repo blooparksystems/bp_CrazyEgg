@@ -1,8 +1,12 @@
- # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from openerp.models import Model
 from openerp import fields
 
+
 class Website(Model):
+
+    """Adds the fields for CrazyEgg."""
+
     _inherit = 'website'
 
     crazyegg = fields.Boolean(
