@@ -20,16 +20,11 @@
 ##############################################################################
 {
     'name': "CrazyEgg",
-
-    'summary': """
-        CrazyEgg Tracking""",
-
-    'description': """
-         CrazyEgg Tracking""",
-
+    'summary': """CrazyEgg Tracking""",
+    'description': """CrazyEgg Tracking""",
     'author': "bloopark systems GmbH & Co. KG",
     'website': "http://www.bloopark.de",
-
+    "license": 'AGPL-3',
     'category': 'Tracking',
     'version': '1.0',
 
@@ -41,11 +36,5 @@
         'views/templates.xml',
         'views/website_views.xml',
         'views/res_config.xml'
-    ],
-
-    'demo': [
-    ],
-
-    'tests': [
     ],
 }
